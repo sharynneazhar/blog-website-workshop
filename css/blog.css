@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px auto 80px;
+  grid-template-areas:
+    'hd'
+    'mn'
+    'ft';
+}
+
+header {
+  border: 1px solid red;
+  grid-area: hd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  font-size: 22px;
+}
+
+main {
+  border: 1px solid red;
+  grid-area: mn;
+}
+
+footer {
+  border: 1px solid red;
+  grid-area: ft;
+}
