@@ -1,4 +1,5 @@
 @import './header.css';
+@import './cards.css';
 
 * {
   box-sizing: border-box;
@@ -34,7 +35,7 @@ footer {
 
 @media screen and (max-width: 425px) {
   .layout {
-    grid-template-rows: 100px auto 80px;
+    grid-template-rows: 100px auto auto 80px;
     grid-template-columns: auto;
     grid-template-areas:
       'hd'
