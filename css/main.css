@@ -1,3 +1,5 @@
+@import './header.css';
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,22 +17,6 @@
     'ft ft';
 }
 
-header {
-  border: 1px solid red;
-  grid-area: hd;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-nav ul {
-  display: flex;
-  list-style-type: none;
-  gap: 30px;
-  font-size: 22px;
-}
-
 .sidebar {
   border: 1px solid red;
   grid-area: sd;
@@ -44,4 +30,16 @@ main {
 footer {
   border: 1px solid red;
   grid-area: ft;
+}
+
+@media screen and (max-width: 425px) {
+  .layout {
+    grid-template-rows: 100px auto 80px;
+    grid-template-columns: auto;
+    grid-template-areas:
+      'hd'
+      'sd'
+      'mn'
+      'ft';
+  }
 }
